@@ -1,8 +1,5 @@
-/*Small tablet to big tablet: from 768 to 1023 */
 @media only screen and (min-width: 768px) {
-    body {
-        margin-right: px;
-    }
+
     .site-nav {
   position: fixed;
     top: 0;
@@ -52,8 +49,7 @@ main
     }
     .movie-poster, movie-details {
         display: block;
-    
-
+        width: 100%;
 }
     
     .movie:first-child .movie-poster {
@@ -64,24 +60,42 @@ main
     .movie:not(:first-child) .movie-backdrop {
         display: none;
 }
-    .movie-details:not(:first-child) .movie-overview {
+    .movie:not(:first-child) .movie-overview {
         display: none;
-
     }
     
-    .movie-details {
-        width: 100%;
-    }
-    .movie-backdrop {
-        width: 100%;
-    }
-    article.movie {
+  .movie {
         margin: 0;
         width: 100%;
+        
     }
 
     footer {
         clear: both;
     }
 }
+
+@media only screen and (min-width: 1280px){
+
+     .movie-details {
+        width: 70%;
+    }
+    
+    .movie:first-child .movie-backdrop {
+        width: 75.2%;
+       
+    }
+    .movie:first-child .movie-poster {
+        display: inline;
+        width: 28.2%;
+        z-index: 30;
+        position: absolute;
+        right: 0
+    }
+    
+    }
+
+}
+    
+
 
