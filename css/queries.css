@@ -1,0 +1,87 @@
+/*Small tablet to big tablet: from 768 to 1023 */
+@media only screen and (min-width: 768px) {
+    body {
+        margin-right: px;
+    }
+    .site-nav {
+  position: fixed;
+    top: 0;
+  z-index: 99;
+  background-color: #ffffff;
+    width: 80px;
+    height: 100%;
+    }
+    
+    .site-nav-item {
+        width: 100%;
+    }
+       
+.site-logo {
+  position: fixed;
+  top: 0;
+  width: 47px;
+  height: 80px;
+  margin: 10px auto;
+  z-index: 100;
+} 
+        
+ .site-nav-item:first-child {       
+      margin-top: 65px;  
+
+}
+    
+    .movie {margin-left: 85px;}
+    .movie-overview {
+        display: block;
+        padding-right: 100px;
+    }
+
+}
+
+
+@media only screen and (min-width: 992px) {
+
+
+main 
+     { margin-left: 80px;}
+    
+    .movie:not(:first-child) {
+        float: left;
+       width: 33.33%;
+
+    }
+    .movie-poster, movie-details {
+        display: block;
+    
+
+}
+    
+    .movie:first-child .movie-poster {
+        display: none;
+        
+}
+    
+    .movie:not(:first-child) .movie-backdrop {
+        display: none;
+}
+    .movie-details:not(:first-child) .movie-overview {
+        display: none;
+
+    }
+    
+    .movie-details {
+        width: 100%;
+    }
+    .movie-backdrop {
+        width: 100%;
+    }
+    article.movie {
+        margin: 0;
+        width: 100%;
+    }
+
+    footer {
+        clear: both;
+    }
+}
+
